@@ -104,12 +104,12 @@ select_rpc() {
     echo "Select an RPC Endpoint:"
     echo "1. https://evmrpc-testnet.0g.ai"
     echo "2. https://16600.rpc.thirdweb.com/8d5b0eeb0a8d1eb1cb6ed409464aa4c1"
-    echo "3. https://og-testnet-evm.itrocket.net:443"
+    echo "3. https://rpc.ankr.com/0g_newton"
     read -p "Enter your choice (1-3): " rpc_choice
     case $rpc_choice in
         1) rpc="https://evmrpc-testnet.0g.ai" ;;
         2) rpc="https://16600.rpc.thirdweb.com/8d5b0eeb0a8d1eb1cb6ed409464aa4c1" ;;
-        3) rpc="https://og-testnet-evm.itrocket.net:443" ;;
+        3) rpc="https://rpc.ankr.com/0g_newton" ;;
         *) echo "Invalid choice. Exiting."; return ;;
     esac
     sed -i "s|^blockchain_rpc_endpoint = .*|blockchain_rpc_endpoint = \"$rpc\"|g" ~/0g-storage-node/run/config.toml
