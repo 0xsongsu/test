@@ -105,11 +105,29 @@ select_rpc() {
     echo "1. https://evmrpc-testnet.0g.ai"
     echo "2. https://16600.rpc.thirdweb.com/8d5b0eeb0a8d1eb1cb6ed409464aa4c1"
     echo "3. https://rpc.ankr.com/0g_newton"
+    echo "4. https://cosmosrpc-testnet.0g.ai/"
+    echo "5. https://0g-json-rpc-public.originstake.com/"
+    echo "6. https://0g-rpc-evm01.validatorvn.com/"
+    echo "7. https://og-testnet-jsonrpc.itrocket.net/"
+    echo "8. https://0g-evmrpc.zstake.xyz/"
+    echo "9. https://0g-rpc.murphynode.net/"
+    echo "10. https://0g-api.murphynode.net/"
+    echo "11. https://0g-evm-rpc.murphynode.net/"
+    echo "12. https://0g.mhclabs.com"
     read -p "Enter your choice (1-3): " rpc_choice
     case $rpc_choice in
         1) rpc="https://evmrpc-testnet.0g.ai" ;;
         2) rpc="https://16600.rpc.thirdweb.com/8d5b0eeb0a8d1eb1cb6ed409464aa4c1" ;;
         3) rpc="https://rpc.ankr.com/0g_newton" ;;
+        4) rpc="https://cosmosrpc-testnet.0g.ai/";;
+        5) rpc="https://0g-json-rpc-public.originstake.com/";;
+        6) rpc="https://0g-rpc-evm01.validatorvn.com/";;
+        7) rpc="https://og-testnet-jsonrpc.itrocket.net/";;
+        8) rpc="https://0g-evmrpc.zstake.xyz/";;
+        9) rpc="https://0g-rpc.murphynode.net/";;
+        10) rpc="https://0g-api.murphynode.net/";;
+        11) rpc="https://0g-evm-rpc.murphynode.net/";;
+        12) rpc="https://0g.mhclabs.com";;
         *) echo "Invalid choice. Exiting."; return ;;
     esac
     sed -i "s|^blockchain_rpc_endpoint = .*|blockchain_rpc_endpoint = \"$rpc\"|g" ~/0g-storage-node/run/config.toml
