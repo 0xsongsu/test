@@ -103,7 +103,7 @@ standard_mode_reset() {
 select_rpc() {
     echo "Select an RPC Endpoint:"
     echo "1. https://evmrpc-testnet.0g.ai"
-    echo "2. https://16600.rpc.thirdweb.com/8d5b0eeb0a8d1eb1cb6ed409464aa4c1"
+    echo "2. https://16600.rpc.thirdweb.com/"
     echo "3. https://rpc.ankr.com/0g_newton"
     echo "4. https://cosmosrpc-testnet.0g.ai/"
     echo "5. https://0g-json-rpc-public.originstake.com/"
