@@ -105,8 +105,8 @@ select_rpc() {
     echo "1. https://evmrpc-testnet.0g.ai"
     echo "2. https://16600.rpc.thirdweb.com/"
     echo "3. https://rpc.ankr.com/0g_newton"
-    echo "4. https://cosmosrpc-testnet.0g.ai/"
-    echo "5. https://0g-json-rpc-public.originstake.com/"
+    echo "4. https://lightnode-json-rpc-0g.grandvalleys.com"
+    echo "5. https://0g.bangcode.id"
     echo "6. https://0g-rpc-evm01.validatorvn.com/"
     echo "7. https://og-testnet-jsonrpc.itrocket.net/"
     echo "8. https://0g-evmrpc.zstake.xyz/"
@@ -119,8 +119,8 @@ select_rpc() {
         1) rpc="https://evmrpc-testnet.0g.ai" ;;
         2) rpc="https://16600.rpc.thirdweb.com/8d5b0eeb0a8d1eb1cb6ed409464aa4c1" ;;
         3) rpc="https://rpc.ankr.com/0g_newton" ;;
-        4) rpc="https://cosmosrpc-testnet.0g.ai/";;
-        5) rpc="https://0g-json-rpc-public.originstake.com/";;
+        4) rpc="https://lightnode-json-rpc-0g.grandvalleys.com";;
+        5) rpc="https://0g.bangcode.id";;
         6) rpc="https://0g-rpc-evm01.validatorvn.com/";;
         7) rpc="https://og-testnet-jsonrpc.itrocket.net/";;
         8) rpc="https://0g-evmrpc.zstake.xyz/";;
